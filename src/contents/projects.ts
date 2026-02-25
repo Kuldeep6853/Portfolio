@@ -27,9 +27,17 @@ export const projects: Project[] = [
         image: '/projects/sensai.png',
       },
       {
+        title: 'AI Customer Support Chatbot',
+        description: 'A chatbot that answer customer queries , provides instant support, and enhances user experience using AI technology.',
+        technologies: ['Node.js', 'MongoDB','tailwing CSS','Scalekit','Gemini_API'],
+        githubLink: 'https://github.com/Kuldeep6853/CustomerSupportChatBot.git',
+        demoLink: 'https://customer-support-chat-bot-4i7d.vercel.app/',
+        image: '/projects/customerSupport.png',
+      },
+      {
         title: 'E-commerce Platform',
         description: 'Find everything you need in one place . Great deals, trusted quality, and doorstep delivery',
-        technologies: ['React', 'Node.js', 'MongoDB','tailwing CSS','Redux'],
+        technologies: ['React', 'MongoDB','tailwing CSS','Redux'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
         image: '/projects/ecomerse.png',

@@ -29,9 +29,7 @@ export default function About() {
         {...fadeInUp}
       >
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
-          With a strong foundation in both frontend and backend technologies with GenAI, I create seamless
-          user experiences and robust server-side solutions.
+          I am an aspiring Full Stack Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js) & GenAI. Passionate about building scalable web applications and solving complex problems with clean, efficient code. As a fresher, I am eager to apply my skills in a dynamic engineering team, contribute to real-world projects, and continuously learn modern web technologies.
         </p>
       </motion.section>
 

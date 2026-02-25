@@ -1,23 +1,22 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { motion } from 'framer-motion'
-import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations'
-import WaveBackground from '../components/WaveBackground'
+import Link from "next/link";
+import Image from "next/image";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
+import WaveBackground from "../components/WaveBackground";
 
+import { TbDownload } from "react-icons/tb";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden py-55">
-      
       {/* Flowing mouse-follow background */}
       <WaveBackground />
 
       {/* Foreground Content */}
       <div className="container max-w-7xl mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-
           <motion.div
             className="flex justify-center items-center mb-4"
             {...scaleIn}
@@ -37,7 +36,7 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            Hi, I&apos;m{' '}
+            Hi, I&apos;m{" "}
             <motion.span
               className="text-primary"
               {...fadeIn}
@@ -116,9 +115,25 @@ export default function Hero() {
               </Link>
             </motion.div>
           </motion.div>
-
+          {/* Resume download button */}
+          <motion.div
+  className="flex justify-center items-center w-full"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <a
+    href="/Kuldeep_Singh_FullStack_Developer_Resume.pdf"
+    download
+    className="w-[220px] flex items-center justify-center gap-2
+    bg-blue-600 text-white px-8 py-3 rounded-lg
+    hover:bg-blue-700 transition-colors mt-3"
+  >
+    Resume
+    <TbDownload size={18} />
+  </a>
+</motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
