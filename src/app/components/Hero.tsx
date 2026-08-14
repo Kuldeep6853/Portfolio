@@ -51,7 +51,7 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            Full Stack Developer | UI/UX Enthusiast
+            Full-Stack Developer | React.js • Next.js • Node.js | MERN + GenAI | Building AI-Powered Web Applications
           </motion.p>
 
           {/* Social Icons */}
